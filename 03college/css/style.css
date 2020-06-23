@@ -15,7 +15,7 @@ header#header{height: 160px;}
 	width: 1200px;height: 260px;background:yellow;
 	margin:auto;
 }
-#contents .container{}
+#contents .container{width: 1200px;margin:auto;}
 #contents .container li{float: left;width: 25%;height:225px;}
 
 #contents .container li:nth-child(1){background: #f00;}
