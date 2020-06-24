@@ -92,12 +92,31 @@
 	</div>
 <style>
 	.bgColorOne{background:#f8f9ff;}
+	
+	.conOne,
+	.conTwo{width: 1200px;margin: 0 auto;}
+	
 	.conOne{
-		width: 1200px;margin: 0 auto;padding: 70px 0;
+		padding: 70px 0;
 		text-align: center;
 	}
 	.conOne h2{font-size:2.5em;margin-bottom:15px;background:red;}
+	
 	.fontColorOne{color:#2c2c96;}
+
+	.conTwo{padding:230px 0;}
+	.conTwo .txtBox{
+		width: 410px;height: 510px;float: left;
+		background:orange;
+	}
+	.conTwo .iconBox{
+		width: 460px;height: 510px;float: right;
+		margin-right:100px;
+	}
+	.conTwo .iconBox li{
+		float: left;width: 210px;height: 230px;
+		background:#eee;
+	}
 </style>
 	<div class="wrap bgColorOne"> <!-- 100% -->
 		<div class="conOne">  <!-- 1200 -->
@@ -105,28 +124,28 @@
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos<br>debitis ut nihil minima labore. Magni.</p>
 		</div>
 	</div>
-	<div class="conTwo">
+	<div class="conTwo clearfix">
 		<div class="txtBox">
 			<h2>Lorem ipsum dolor <span class="fontColorOne">sit amet, consectetur.</span></h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos<br>debitis ut nihil minima labore. Magni.</p>
 			<a href="#">Lorem ipsum</a>
 		</div>
 		<div class="iconBox">
-			<ul>
+			<ul class="clearfix">
 				<li>
-					<img src="images/icon10_01.jpg" alt="">
+					<img src="images/icon01_01.jpg" alt="">
 					<p>Lorem<br>ipsum.</p>
 				</li>
 				<li>
-					<img src="images/icon10_02.jpg" alt="">
+					<img src="images/icon01_02.jpg" alt="">
 					<p>Lorem<br>ipsum.</p>
 				</li>
 				<li>
-					<img src="images/icon10_03.jpg" alt="">
+					<img src="images/icon01_03.jpg" alt="">
 					<p>Lorem<br>ipsum.</p>
 				</li>
 				<li>
-					<img src="images/icon10_04.jpg" alt="">
+					<img src="images/icon01_04.jpg" alt="">
 					<p>Lorem<br>ipsum.</p>
 				</li>
 			</ul>
