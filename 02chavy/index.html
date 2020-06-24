@@ -91,10 +91,14 @@
 		
 	</div>
 <style>
+	/*common*/
 	.bgColorOne{background:#f8f9ff;}
+	.fontColorOne{color:#2c2c96;}
+	.shadow{box-shadow: 0 0 15px #ddd;}
 	
 	.conOne,
-	.conTwo{width: 1200px;margin: 0 auto;}
+	.conTwo,
+	.conThree{width: 1200px;margin: 0 auto;}
 	
 	.conOne{
 		padding: 70px 0;
@@ -102,7 +106,7 @@
 	}
 	.conOne h2{font-size:2.5em;margin-bottom:15px;}
 	
-	.fontColorOne{color:#2c2c96;}
+
 
 	.conTwo{padding:100px 0;}
 	.conTwo .txtBox{
@@ -132,7 +136,22 @@
 	.conTwo .iconBox li:nth-child(3){margin-right: 40px;}
 	.conTwo .iconBox li img{margin-bottom:15px;}
 
-	.shadow{box-shadow: 0 0 15px #ddd;}
+
+	.conThree{padding:255px 0;position: relative;}
+	.conThree .txtBox{
+		width: 410px;height: 510px;
+	}
+	.conThree .txtBox h2{font-size:2.5em;margin-bottom:15px;}
+	.conThree .txtBox p{margin-bottom:30px;}
+	.conThree .txtBox a{
+		display: block;width: 200px;line-height: 50px;
+		border-radius:25px;background:#2c2c96;color:#fff;
+		text-align: center;
+	}
+
+	.conThree img.img{position: absolute;right: 0;top: 0;}
+
+	
 </style>
 	<div class="wrap bgColorOne"> <!-- 100% -->
 		<div class="conOne">  <!-- 1200 -->
@@ -167,6 +186,18 @@
 			</ul>
 		</div>
 	</div>
+	<div class="wrap bgColorOne">
+		<div class="conThree">
+			<div class="txtBox">
+				<h2>Lorem ipsum dolor <span class="fontColorOne">sit amet, consectetur.</span></h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimosdebitis ut nihil minima labore. Magni.</p>
+				<a href="#" class="shadow">Lorem ipsum</a>
+			</div>
+			<img src="images/img03_01.jpg" alt="" class="img">
+
+		</div> <!-- conThree -->
+		
+	</div> <!-- wrap -->
 
 </body>
 </html>
