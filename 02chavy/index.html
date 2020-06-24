@@ -4,12 +4,18 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta charset="UTF-8">
 	<title>chavy</title>
+
+
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600;700&display=swap" rel="stylesheet">
+
+
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/jquery.bxslider.css">
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/jquery.bxslider.js"></script>
 	<style>
-		header#header{width: 1100px;height: 50px;;background:skyblue;margin: 0 auto;padding-top:10px;}
+		body{font-family: 'Source Sans Pro', sans-serif;}
+		header#header{width: 1200px;height: 50px;;background:skyblue;margin: 0 auto;padding-top:10px;}
 		.box{
 			width: 100px;height: 10px;background:red;
 		}
@@ -23,11 +29,20 @@
 		.visual .visualTxt{position: absolute;top:150px;width: 500px;}
 		.visual .visualTxt h3{font-size:2.5em;margin-bottom:20px;}
 		.visual .visualTxt p{margin-bottom:30px;}
-		.visual .visualTxt a{display: block;width: 200px;height: 60px;background: #f00; color:white;border-radius:40px;text-align: center;line-height: 60px;}
+		.visual .visualTxt a{display: block;width: 200px;height: 60px;background: #2c2c96; color:white;border-radius:40px;text-align: center;line-height: 60px;}
+.bx-wrapper {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 0 none;
+    background: #fff;
+    margin-bottom:0;
+}
+.vColor{color:#2c2c96;}
 	</style>
 	<script>
 		$(document).ready(function(){
-			$(".slider").bxSlider();
+			$(".slider").bxSlider({pager:false});
 		});
 
 	</script>
@@ -75,5 +90,48 @@
 		</ul>
 		
 	</div>
+<style>
+	.bgColorOne{background:#f8f9ff;}
+	.conOne{
+		width: 1200px;margin: 0 auto;padding: 70px 0;
+		text-align: center;
+	}
+	.conOne h2{font-size:2.5em;margin-bottom:15px;background:red;}
+	.fontColorOne{color:#2c2c96;}
+</style>
+	<div class="wrap bgColorOne"> <!-- 100% -->
+		<div class="conOne">  <!-- 1200 -->
+			<h2>Lorem ipsum dolor <span class="fontColorOne">sit amet, consectetur.</span></h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos<br>debitis ut nihil minima labore. Magni.</p>
+		</div>
+	</div>
+	<div class="conTwo">
+		<div class="txtBox">
+			<h2>Lorem ipsum dolor <span class="fontColorOne">sit amet, consectetur.</span></h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos<br>debitis ut nihil minima labore. Magni.</p>
+			<a href="#">Lorem ipsum</a>
+		</div>
+		<div class="iconBox">
+			<ul>
+				<li>
+					<img src="images/icon10_01.jpg" alt="">
+					<p>Lorem<br>ipsum.</p>
+				</li>
+				<li>
+					<img src="images/icon10_02.jpg" alt="">
+					<p>Lorem<br>ipsum.</p>
+				</li>
+				<li>
+					<img src="images/icon10_03.jpg" alt="">
+					<p>Lorem<br>ipsum.</p>
+				</li>
+				<li>
+					<img src="images/icon10_04.jpg" alt="">
+					<p>Lorem<br>ipsum.</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+
 </body>
 </html>
