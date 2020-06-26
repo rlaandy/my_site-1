@@ -9,7 +9,42 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<header id="header"></header>
+	<style>
+		.util_menu_wrap{background:#0044af;}
+		.util_menu{
+			width: 1200px;margin: 0 auto;
+			_background: #fff;
+		}
+		.util_menu ul.left{}
+		.util_menu ul.left li{
+			float: left;width: 120px;margin-right:2px;
+		}
+		.util_menu ul.left li a{
+			display: block;line-height:40px;
+			text-align: center;background: #00163b;
+			color:#fff;font-weight:bold;
+		}
+
+		.util_menu ul.right{display: none;}
+	</style>
+	<header id="header_wrap">
+		<div class="util_menu_wrap">
+			<nav class="util_menu">
+				<ul class="left clearfix">
+					<li><a href="#">대학교</a></li>
+					<li><a href="#">입학안내</a></li>
+					<li><a href="#">대학원</a></li>
+				</ul>
+				<ul class="right">
+					<li>글자크기</li>
+					<li><a href="#">-</a></li>
+					<li><a href="#">menu</a></li>
+					<li><a href="#">menu</a></li>
+					<li><a href="#">menu</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
 	<div id="contents">
 		<section class="title"></section>
 		<div class="container">
