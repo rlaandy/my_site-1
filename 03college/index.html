@@ -102,10 +102,18 @@
 	    margin-bottom:0;
 	}
 
+
+	.sliderTwo .bx-wrapper .bx-pager {
+    bottom: 190px;
+    width: 150px;
+    right:0;
+	}
+
 	</style>
 	<script>
 		$(document).ready(function(){
 			$(".vSlider").bxSlider({pager:false});
+			$(".bSlider").bxSlider();
 		});
 	</script>
 	<header id="header_wrap">
@@ -174,7 +182,12 @@
 				<li>05</li>
 				<li>06</li>
 				<li>07</li>
-				<li>08</li>
+				<li class="sliderTwo">
+					<div class="bSlider">
+						<div><img src="images/banner01_01.jpg" alt=""></div>
+						<div><img src="images/banner01_01.jpg" alt=""></div>
+					</div>
+				</li>
 			</ul>
 		</div>
 	</div>
