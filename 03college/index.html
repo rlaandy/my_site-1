@@ -15,7 +15,7 @@
 			width: 1200px;margin: 0 auto;
 			_background: #fff;
 		}
-		.util_menu ul.left{}
+		.util_menu ul.left{float: left;}
 		.util_menu ul.left li{
 			float: left;width: 120px;margin-right:2px;
 		}
@@ -24,23 +24,40 @@
 			text-align: center;background: #00163b;
 			color:#fff;font-weight:bold;
 		}
+		.util_menu ul.left li a.active{background:#fff;color:#333;}
 
-		.util_menu ul.right{display: none;}
+		.util_menu ul.right{float: right;}
+		.util_menu ul.right li{
+			float: left;color:#fff;font-size:0.8em;
+		}
+		.util_menu ul.right li a{
+			display: block;color:#fff;padding:0 10px;
+			line-height:40px;
+		}
+		.util_menu ul.right li.btn_mp a{
+			float: left;background: #fff;padding:0;
+			margin-right:2px;color:#333;
+			width: 20px;height:21px;line-height:20px;text-align: center;
+			margin-top:10px;font-weight:bold;text-indent:-1px;
+		}
 	</style>
 	<header id="header_wrap">
 		<div class="util_menu_wrap">
-			<nav class="util_menu">
+			<nav class="util_menu clearfix">
 				<ul class="left clearfix">
-					<li><a href="#">대학교</a></li>
+					<li><a href="#" class="active">대학교</a></li>
 					<li><a href="#">입학안내</a></li>
 					<li><a href="#">대학원</a></li>
 				</ul>
-				<ul class="right">
+				<ul class="right clearfix">
 					<li>글자크기</li>
-					<li><a href="#">-</a></li>
-					<li><a href="#">menu</a></li>
-					<li><a href="#">menu</a></li>
-					<li><a href="#">menu</a></li>
+					<li class="btn_mp clearfix">
+						<a href="#">-</a>
+						<a href="#">+</a>
+					</li>
+					<li><a href="#">찾아오시는길</a></li>
+					<li><a href="#">ENGLISH</a></li>
+					<li><a href="#">사이트맵</a></li>
 				</ul>
 			</nav>
 		</div>
