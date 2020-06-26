@@ -7,6 +7,8 @@
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/jquery.bxslider.css">
 	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="JS/jquery.bxslider.js"></script>
 </head>
 <body>
 	<style>
@@ -79,9 +81,20 @@
 
 
 
-
+	.bx-wrapper {
+	    -moz-box-shadow: none;
+	    -webkit-box-shadow: none;
+	    box-shadow: none;
+	    border: 0 none;
+	    margin-bottom:0;
+	}
 
 	</style>
+	<script>
+		$(document).ready(function(){
+			$(".vSlider").bxSlider({pager:false});
+		});
+	</script>
 	<header id="header_wrap">
 		<div class="util_menu_wrap">  <!-- 100% blue -->
 			<nav class="util_menu clearfix"> <!-- 1200  m0a-->
@@ -118,14 +131,30 @@
 				</div>
 
 			</div>
-
 		</div>
 	</header>
 	<div id="contents">
 		<section class="title"></section>
 		<div class="container">
 			<ul class="clearfix">
-				<li>01</li>
+				<li>
+					<ul class="vSlider">
+						<li class="viewSlider">
+							<img src="images/box1_01.jpg" alt="">
+							<div class="sliderTxt">
+								<p>한국에서<br>시작하는<br>새로운꿈</p>
+								<a href="#">자세히보기</a>
+							</div>
+						</li>
+						<li class="viewSlider">
+							<img src="images/box1_01.jpg" alt="">
+							<div class="sliderTxt">
+								<p>한국에서<br>시작하는<br>새로운꿈</p>
+								<a href="#">자세히보기</a>
+							</div>
+						</li>
+					</ul>
+				</li>
 				<li>02</li>
 				<li>03</li>
 				<li>04</li>
