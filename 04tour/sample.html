@@ -22,6 +22,7 @@
 			font-size:18px;font-weight:bold;
 			box-shadow: 10px 10px 20px #000;
 			background-color: #fff;
+			position: relative;z-index:1;
 		}
 		.searchBtn{
 			width: 20px;height: 20px;
@@ -29,6 +30,7 @@
 			text-indent:-9999px;
 			border:0 none;
 			position: absolute;right:20px;top:15px;
+			z-index:1;
 		}
 		.searchTitle{
 			display: block;
@@ -37,6 +39,7 @@
 			text-indent:-9999px;
 			position: absolute;top:15px;
 			left:15px;
+			z-index:2;
 		}
 		.wrap{
 			position: absolute;
@@ -44,11 +47,13 @@
 			left:50%;top:50%;
 			transform:translate(-50%,-50%);
 		}
+		.img01{position: absolute;right:-100px;top:-250px;}
 
 	</style>
 </head>
 <body>
 	<div class="wrap">
+		<img src="images/content2.png" alt="" class="img01">
 		<form action="#" method="get">
 			<label for="searchTxt" class="searchTitle">searchtitle</label>
 			<input type="text" id="searchTxt" name="search" placeholder="검색어를 입력하세요" class="searchInp">
