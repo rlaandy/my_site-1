@@ -13,6 +13,8 @@
 			background-position: center;
 			-webkit-background-size: cover;
 			background-size: cover;
+			overflow-y:auto;
+			overflow-x:hidden;
 		}
 		.searchInp{
 			width: 400px;height: 50px;
@@ -46,9 +48,36 @@
 			width:400px;height: 50px;
 			left:50%;top:50%;
 			transform:translate(-50%,-50%);
+			z-index: 1
 		}
-		.img01{position: absolute;right:-100px;top:-250px;}
-
+		.img01{
+			position: absolute;right:-100px;top:-250px;
+			animation-name:bal01;
+			animation-duration:1.5s;
+			animation-iteration-count:infinite;
+			animation-direction:alternate;
+			animation-timing-function:ease-in-out;
+		}
+		/*@keyframes bal01{
+			0%{right:-100px;top:-250px;}
+			100%{right:-100px;top:-220px;}
+		}*/
+		@keyframes bal01{
+			0%{transform:translateY(-20px);}
+			100%{transform:translateY(0px);}
+		}
+		.img00{
+			position: absolute;left:0;bottom:0;
+			animation-name:air01;
+			animation-duration:2s;
+			animation-fill-mode:forwards;
+			z-index: 0;
+			animation-iteration-count:infinite;
+		}
+		@keyframes air01{
+			0%{left:0;bottom:0;}
+			100%{left:1000px;bottom:1000px;}
+		}
 	</style>
 </head>
 <body>
@@ -60,5 +89,6 @@
 			<button type="submit" class="searchBtn">search</button>
 		</form>
 	</div>
+	<img src="images/reallyAir.png" alt="" class="img00">
 </body>
 </html>
