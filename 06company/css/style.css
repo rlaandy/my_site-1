@@ -18,3 +18,21 @@
 #main_menu a:hover:after{width: 100%;}
 
 /*bxslider*/
+.slider_wrap ul li{height: 1005px;}
+.slider_wrap li.first{
+	background:url(../images/mainimg01.jpg) no-repeat center;
+	background-size:cover;
+}
+.slider_wrap li.second{
+	background:url(../images/mainimg02.jpg) no-repeat center;
+	background-size:cover;
+}
+.slider_wrap .slider_txt{
+	width: 700px;position: absolute;
+	left:50%;transform:translateX(-50%);top:30%;color:white;text-align: center;
+}
+.slider_wrap h3{font-size:3.5em;}
+.slider_wrap h3:after{
+	content:"";display: block;width: 300px;height: 1px;
+	background: #fff;margin:20px auto;
+}
