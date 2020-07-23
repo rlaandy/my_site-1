@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+/*header*/
+#header{position: relative;}
+#header.main{height: 1950px;}
+#header_top{
+	width: 1260px;height: 50px;position: absolute;background-color:skyblue;
+	left:50%;transform:translateX(-50%);top:30px;
+}
+#header_top h1{float: left;line-height:50px;padding-left:10px;}
+#header_top h1 a{color:white;}
+#header_top #main_menu{float: right;}
+#main_menu>ul>li{float: left;}
+#main_menu a{display: block;line-height:50px;padding:0 30px;color:white;font-weight:bold;}
